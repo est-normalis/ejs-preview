@@ -1,6 +1,6 @@
 import { createServer, Server } from 'http'
 
-const serveContent = (content: string, mimeType: string): Server => {
+const createWebserver = (content: string, mimeType: string): Server => {
   return createServer((_reqest, response) => {
     response.setHeader('Content-Length', content.length)
     response.setHeader('Content-Type', mimeType)
@@ -9,4 +9,4 @@ const serveContent = (content: string, mimeType: string): Server => {
   })
 }
 
-export default serveContent
+export default createWebserver
