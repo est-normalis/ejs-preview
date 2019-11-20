@@ -1,0 +1,20 @@
+{
+  "name": "ejs-preview",
+  "version": "0.0.1",
+  "description": "Simple package for previewing ejs templates",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/est-normalis/ejs-preview.git"
+  },
+  "keywords": [
+    "ejs",
+    "templates"
+  ],
+  "author": "Est Normalis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/est-normalis/ejs-preview/issues"
+  },
+  "homepage": "https://github.com/est-normalis/ejs-preview#readme"
+}
