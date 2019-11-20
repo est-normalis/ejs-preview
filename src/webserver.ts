@@ -1,13 +1,12 @@
-import { createServer } from 'http'
+import { createServer, Server } from 'http'
 
-export const serveContent = (
-  content: string,
-  mimeType: string = 'text/html'
-) => {
-  createServer((_reqest, response) => {
+const serveContent = (content: string, mimeType: string): Server => {
+  return createServer((_reqest, response) => {
     response.setHeader('Content-Length', content.length)
     response.setHeader('Content-Type', mimeType)
     response.statusCode = 200
     response.end(content)
   })
 }
+
+export default serveContent
