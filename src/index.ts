@@ -15,7 +15,7 @@ const defaultConfig = {
   mimeType: 'text/html'
 }
 
-interface PreviewConfig {
+export interface PreviewConfig {
   templatePath: string
   variables?: any
   url?: string
