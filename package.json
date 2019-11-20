@@ -7,6 +7,11 @@
     "type": "git",
     "url": "git+https://github.com/est-normalis/ejs-preview.git"
   },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
+    "prettify": "prettier src/**/*.ts --write"
+  },
   "keywords": [
     "ejs",
     "templates"
