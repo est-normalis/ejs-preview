@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/est-normalis/ejs-preview/issues"
   },
-  "homepage": "https://github.com/est-normalis/ejs-preview#readme"
+  "homepage": "https://github.com/est-normalis/ejs-preview#readme",
+  "devDependencies": {
+    "@types/ejs": "^2.6.3",
+    "@types/node": "^12.12.11",
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.2"
+  }
 }
