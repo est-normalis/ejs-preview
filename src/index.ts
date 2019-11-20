@@ -1,7 +1,7 @@
 import render from './render'
 import webserver from './webserver'
 
-const previewTemplate = (opts: PreviewConfig) => {
+export const previewTemplate = (opts: PreviewConfig) => {
   const config = Object.assign(defaultConfig, opts)
   const template = render(config.templatePath, config.variables)
   const server = webserver(template, config.mimeType)
@@ -24,5 +24,3 @@ export interface PreviewConfig {
   port?: any
   mimeType?: string
 }
-
-export default previewTemplate
