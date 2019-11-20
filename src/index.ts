@@ -5,6 +5,8 @@ const previewTemplate = (opts: PreviewConfig) => {
   const config = Object.assign(defaultConfig, opts)
   const template = render(config.templatePath, config.variables)
   const server = webserver(template, config.mimeType)
+
+  console.log(`Starting ejs-preview server on address: ${config.url}:${config.port}`)
   server.listen(config.port, config.url)
 }
 
