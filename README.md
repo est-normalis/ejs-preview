@@ -37,10 +37,10 @@ npm i @est-normalis/ejs-preview --save-dev
 @est-normalis/ejs-preview exports by default function allowing
 to start webserver and serve choosen ejs file.
 
-``` javascript
-import preview from '@est-normalis/ejs-preview'
+``` typescript
+import { previewTemplate } from '@est-normalis/ejs-preview'
 
-preview({
+previewTemplate({
     templatePath: 'src/templates/index.html.ejs'
 })
 ```
