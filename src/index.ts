@@ -6,7 +6,10 @@ export const previewTemplate = (opts: PreviewConfig) => {
   const template = render(config.templatePath, config.variables)
   const server = webserver(template, config.mimeType)
 
-  console.log('\x1b[36m%s\x1b[0m', `Starting ejs-preview server on address: ${config.url}:${config.port}`)
+  console.log(
+    '\x1b[36m%s\x1b[0m',
+    `Starting ejs-preview server on address: ${config.url}:${config.port}`
+  )
   server.listen(config.port, config.url)
 }
 
