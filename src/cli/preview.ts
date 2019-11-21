@@ -1,7 +1,7 @@
 import { previewTemplate } from '../index'
 import { readVariablesFile } from './fileHelpers'
 
-export const startPreview = ({templatePath, port, host, variablesFile}: PreviewOptions): void => {
+export const startPreview = ({templatePath, port, host, variablesFile, mime}: PreviewOptions): void => {
     let variables = {}
     if (variablesFile) {
         variables = readVariablesFile(variablesFile)
@@ -11,7 +11,8 @@ export const startPreview = ({templatePath, port, host, variablesFile}: PreviewO
         templatePath,
         port: port || 9999,
         url: host || 'localhost',
-        variables
+        variables,
+        mimeType: mime || 'text/html'
     })
 }
 
@@ -21,4 +22,5 @@ export interface PreviewOptions {
     port?: number | string
     host?: string
     variablesFile?: string
+    mime?: string
 }

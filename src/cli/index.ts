@@ -5,9 +5,9 @@ program
     .arguments('<template> [variablesFile]')
     .description(`Starts a live server from selected ejs template,
     passing to it variables file if its specified`)
-    .option('-p, --port', 'specify server port')
-    .option('-b, -h, --host', 'change server hostname')
-    .option('-m, --mime', 'specify mime type')
+    .option('-p, --port <port>', 'specify server port')
+    .option('-h, --host <host>', 'change server hostname')
+    .option('-m, --mime <mime>', 'specify mime type')
     .action((template, variables) => {
         startPreview({
             templatePath: template,
