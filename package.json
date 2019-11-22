@@ -3,7 +3,10 @@
   "version": "0.2.0",
   "description": "Simple package for previewing ejs templates",
   "main": "dist/index.js",
-  "bin": "dist/cli/index.js",
+  "bin": {
+    "@est-normalis/ejs-preview": "dist/cli/index.js",
+    "ejs-preview": "dist/cli/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/est-normalis/ejs-preview.git"
