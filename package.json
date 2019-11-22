@@ -1,6 +1,6 @@
 {
   "name": "@est-normalis/ejs-preview",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "description": "Simple package for previewing ejs templates",
   "main": "dist/index.js",
   "bin": {
