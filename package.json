@@ -1,6 +1,6 @@
 {
   "name": "@est-normalis/ejs-preview",
-  "version": "0.2.3",
+  "version": "0.2.5",
   "description": "Simple package for previewing ejs templates",
   "main": "dist/index.js",
   "bin": {
@@ -27,15 +27,15 @@
   },
   "homepage": "https://github.com/est-normalis/ejs-preview#readme",
   "devDependencies": {
-    "@types/ejs": "^2.6.3",
-    "@types/node": "^12.12.11",
-    "prettier": "^1.19.1",
-    "tslint": "^5.20.1",
+    "@types/ejs": "^3.0.1",
+    "@types/node": "^13.9.5",
+    "prettier": "^2.0.2",
+    "tslint": "^6.1.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "commander": "^4.0.1",
-    "ejs": "^2.7.4"
+    "commander": "^5.0.0",
+    "ejs": "^3.0.2"
   }
 }
